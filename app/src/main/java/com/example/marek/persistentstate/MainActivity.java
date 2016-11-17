@@ -194,6 +194,9 @@ public class MainActivity extends AppCompatActivity {
             long recordID = c.getLong(c.getColumnIndexOrThrow(MyDataEntry._ID));
             String studentID = c.getString(c.getColumnIndexOrThrow(MyDataEntry.STUDENT_ID_COLUMN));
             String studentGrade = c.getString(c.getColumnIndexOrThrow(MyDataEntry.GRADE_COLUMN));
+            System.out.println("RECORD KEY: " + recordID + "Student ID: " +
+                    studentID + "Student Grade: " + studentGrade);
+            hasMoreData = c.moveToNext();
         }
 
     }
