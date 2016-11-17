@@ -192,6 +192,9 @@ public class MainActivity extends AppCompatActivity {
         while (hasMoreData){
             //Get value from each column
             long recordID = c.getLong(c.getColumnIndexOrThrow(MyDataEntry._ID));
+            String studentID = c.getString(c.getColumnIndexOrThrow(MyDataEntry.STUDENT_ID_COLUMN));
+            String studentGrade = c.getString(c.getColumnIndexOrThrow(MyDataEntry.GRADE_COLUMN));
         }
+
     }
 }
